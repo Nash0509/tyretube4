@@ -1,0 +1,96 @@
+.top {
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 1rem;
+   
+}
+
+
+.bars {
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+   height: 5.5vh;
+   width: 40vw;
+  border-left: 2px soild gray;
+  padding-left: 1.8rem;
+  background-color: rgb(13, 13, 13);
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.top input:active, input:hover  {
+    border: 2px solid blue;
+}
+
+.top button {
+    height: 5.89vh;
+    width: 4.2vw;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(57, 56, 56);
+    border: 2px solid rgb(182, 177, 177);
+}
+
+.more {
+    padding-top: 12vh;
+    padding-left: 15vw;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color: black;
+}
+
+.side {
+    margin-top: 10vh;
+}
+
+.card {
+    height: 50vh;
+    width: 20vw;
+}
+
+nav h5 {
+    color: rgb(184, 182, 182);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    font-size: 1rem;
+   text-align: center;
+}
+
+.side {
+    background-color: rgb(4, 4, 4);
+}
+
+.footer {
+    height: 30vh;
+    width: 100vw;
+    background-color: rgb(12, 12, 12);
+}
+
+.sec1 {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec1 h5 {
+    color: silver;
+    padding-top: 2rem;
+    opacity: 50%;
+    font-size: 1rem;
+}
+
+.hash6 {
+    color: silver;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: 40%;
+    padding-top: 0.8rem;
+}
+
+.logus {
+    text-align: center;
+    padding-top: 1rem;
+}
