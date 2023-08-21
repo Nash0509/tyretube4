@@ -38,7 +38,6 @@
 
 .more {
     padding-top: 12vh;
-    padding-left: 15vw;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     background-color: black;

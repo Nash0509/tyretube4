@@ -11,7 +11,7 @@ const Home = () => {
   const [loading, setLoading] = useState('Loading...');
   const [count, setCount] = useState(1);
   const [search, setSearch] = useState('');
-  const [term, setterm] = useState('new videos')
+  const [term, setterm] = useState('new videos');
 
 
    
@@ -37,6 +37,20 @@ const Home = () => {
       document.getElementsByClassName('more')[0].style.gridTemplateColumns = '1fr 1fr 1fr 1fr'
       document.getElementsByClassName('more')[0].style.paddingLeft = '9.5vw'
       document.getElementsByClassName('more')[0].style.width = '92vw'
+      document.getElementsByClassName('home1')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('home2')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('home3')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('library')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('history')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('your')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('wlater')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('download')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('subs')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('c1')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('c2')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('c3')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('c4')[0].style.fontSize = '1rem'
+      document.getElementsByClassName('c5')[0].style.fontSize = '1rem'
 
       setView(false);
     }
@@ -44,6 +58,7 @@ const Home = () => {
       document.getElementsByClassName('side')[0].style.width = '13.1vw'
       document.getElementsByClassName('more')[0].style.gridTemplateColumns = '1fr 1fr 1fr'
       document.getElementsByClassName('more')[0].style.paddingLeft = '16.5vw'
+     
   
       setView(true);
     }
@@ -146,25 +161,25 @@ function calculateTimeDifference(publishTime) {
       </div>
 
       <nav className="side" style={{height:'100vh', width:'13.1vw', position:'fixed'}}>
-      <h5 className="home1"><FontAwesomeIcon icon={faHome} style={{textAlign:'center'}}/> <span className='und1'>Home</span></h5>
-      <h5 className="home2"><FontAwesomeIcon icon={faTiktok} style={{textAlign:'center'}}/> Shorts</h5>
-      <h5 className="home3"><FontAwesomeIcon icon={faShieldVirus} style={{textAlign:'center'}}/> Subcriptions</h5>
+      <h5 className="home1 wwf"><FontAwesomeIcon icon={faHome} style={{textAlign:'center'}}/> <span className='und1'>Home</span></h5>
+      <h5 className="home2 wwf"><FontAwesomeIcon icon={faTiktok} style={{textAlign:'center'}}/> Shorts</h5>
+      <h5 className="home3 wwf"><FontAwesomeIcon icon={faShieldVirus} style={{textAlign:'center'}}/> Subcriptions</h5>
       <hr  style={(views) ? {width:'10vw',color:'silver', textAlign:'center', marginLeft:'1.55vw'}:{width:'0vw',color:'silver', textAlign:'center', marginLeft:'0vw'}}/>
       <h5 style={{ color:'silver'}}/>
-      <h5 className="library"><FontAwesomeIcon icon={faBook} style={{textAlign:'center'}}/> Library</h5>
-      <h5 className="history"><FontAwesomeIcon icon={faHistory} style={{textAlign:'center'}}/> History</h5>
-      <h5 className="your"><FontAwesomeIcon icon={faVideo}/> Your videos</h5>
-      <h5 className="wlater"><FontAwesomeIcon icon={faTimeline} style={{textAlign:'center'}}/> Watch Later</h5>
-      <h5 className="download"><FontAwesomeIcon icon={faDownload} style={{textAlign:'center'}}/> Downloads</h5>
+      <h5 className="library wwf"><FontAwesomeIcon icon={faBook} style={{textAlign:'center'}}/> Library</h5>
+      <h5 className="history wwf"><FontAwesomeIcon icon={faHistory} style={{textAlign:'center'}}/> History</h5>
+      <h5 className="your wwf"><FontAwesomeIcon icon={faVideo}/> Your videos</h5>
+      <h5 className="wlater wwf"><FontAwesomeIcon icon={faTimeline} style={{textAlign:'center'}}/> Watch Later</h5>
+      <h5 className="download wwf"><FontAwesomeIcon icon={faDownload} style={{textAlign:'center'}}/> Downloads</h5>
       <hr style={(views) ? {width:'10vw',color:'silver', textAlign:'center', marginLeft:'1.55vw'}:{width:'0vw',color:'silver', textAlign:'center', marginLeft:'0vw'}}/>
-      <h5 className="subs"><FontAwesomeIcon icon={faStream} style={{textAlign:'center'}}/> Subscriptions</h5>
-      <h5 className="c1">Republic Bharat <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
-      <h5 className="c2">Zee News <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
-      <h5 className="c3">The Lallantop <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
-      <h5 className="c4">MrBeast <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
-      <h5 className="c5">Cartoon Network <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>3
+      <h5 className="subs wwf"><FontAwesomeIcon icon={faStream} style={{textAlign:'center'}}/> Subscriptions</h5>
+      <h5 className="c1 wwf">Republic Bharat <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
+      <h5 className="c2 wwf">Zee News <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
+      <h5 className="c3 wwf">The Lallantop <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
+      <h5 className="c4 wwf">MrBeast <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
+      <h5 className="c5 wwf">Cartoon Network <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>3
      </nav>
-      <div className="more" style={(views) ? {width:'78vw'}:{width:'86vw'}}>
+      <div className="more" style={(views) ? {width:'78vw', paddingLeft:'15vw'}:{width:'86vw', paddingLeft:'15vw'}}>
         {videos.slice(0, count * 10).map((video, index) => (
           <div className='card'  key={index}>
             <img  src={video.snippet.thumbnails.medium.url} alt="image" style={(views) ? {width:'25vw', borderRadius:'10px'}:{width:'21vw', borderRadius:'10px'}}/>
