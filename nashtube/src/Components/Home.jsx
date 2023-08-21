@@ -37,6 +37,13 @@ const Home = () => {
       document.getElementsByClassName('more')[0].style.gridTemplateColumns = '1fr 1fr 1fr 1fr'
       document.getElementsByClassName('more')[0].style.paddingLeft = '9.5vw'
       document.getElementsByClassName('more')[0].style.width = '92vw'
+    
+      setView(false);
+    }
+    else {
+      document.getElementsByClassName('side')[0].style.width = '13.1vw'
+      document.getElementsByClassName('more')[0].style.gridTemplateColumns = '1fr 1fr 1fr'
+      document.getElementsByClassName('more')[0].style.paddingLeft = '16.5vw'
       document.getElementsByClassName('home1')[0].style.fontSize = '1rem'
       document.getElementsByClassName('home2')[0].style.fontSize = '1rem'
       document.getElementsByClassName('home3')[0].style.fontSize = '1rem'
@@ -52,13 +59,6 @@ const Home = () => {
       document.getElementsByClassName('c4')[0].style.fontSize = '1rem'
       document.getElementsByClassName('c5')[0].style.fontSize = '1rem'
 
-      setView(false);
-    }
-    else {
-      document.getElementsByClassName('side')[0].style.width = '13.1vw'
-      document.getElementsByClassName('more')[0].style.gridTemplateColumns = '1fr 1fr 1fr'
-      document.getElementsByClassName('more')[0].style.paddingLeft = '16.5vw'
-     
   
       setView(true);
     }
@@ -164,14 +164,13 @@ function calculateTimeDifference(publishTime) {
       <h5 className="home1 wwf"><FontAwesomeIcon icon={faHome} style={{textAlign:'center'}}/> <span className='und1'>Home</span></h5>
       <h5 className="home2 wwf"><FontAwesomeIcon icon={faTiktok} style={{textAlign:'center'}}/> Shorts</h5>
       <h5 className="home3 wwf"><FontAwesomeIcon icon={faShieldVirus} style={{textAlign:'center'}}/> Subcriptions</h5>
-      <hr  style={(views) ? {width:'10vw',color:'silver', textAlign:'center', marginLeft:'1.55vw'}:{width:'0vw',color:'silver', textAlign:'center', marginLeft:'0vw'}}/>
-      <h5 style={{ color:'silver'}}/>
+     <h5 style={{ color:'silver'}}/>
       <h5 className="library wwf"><FontAwesomeIcon icon={faBook} style={{textAlign:'center'}}/> Library</h5>
       <h5 className="history wwf"><FontAwesomeIcon icon={faHistory} style={{textAlign:'center'}}/> History</h5>
       <h5 className="your wwf"><FontAwesomeIcon icon={faVideo}/> Your videos</h5>
       <h5 className="wlater wwf"><FontAwesomeIcon icon={faTimeline} style={{textAlign:'center'}}/> Watch Later</h5>
       <h5 className="download wwf"><FontAwesomeIcon icon={faDownload} style={{textAlign:'center'}}/> Downloads</h5>
-      <hr style={(views) ? {width:'10vw',color:'silver', textAlign:'center', marginLeft:'1.55vw'}:{width:'0vw',color:'silver', textAlign:'center', marginLeft:'0vw'}}/>
+     
       <h5 className="subs wwf"><FontAwesomeIcon icon={faStream} style={{textAlign:'center'}}/> Subscriptions</h5>
       <h5 className="c1 wwf">Republic Bharat <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
       <h5 className="c2 wwf">Zee News <FontAwesomeIcon icon={faTowerBroadcast} style={{color:'orange', textAlign:'center'}}/></h5>
