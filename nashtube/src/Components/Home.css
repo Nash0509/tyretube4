@@ -6,7 +6,7 @@
     text-align: center;
     box-sizing: border-box;
     padding-top: 1rem;
-   
+    border-bottom: 1px solid rgb(66, 65, 63);
 }
 
 
@@ -42,10 +42,12 @@
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     background-color: black;
+    padding: 7rem;
 }
 
 .side {
     margin-top: 10vh;
+    background-color: rgb(4, 4, 4);
 }
 
 .card {
@@ -61,9 +63,6 @@ nav h5 {
    text-align: center;
 }
 
-.side {
-    background-color: rgb(4, 4, 4);
-}
 
 .footer {
     height: 30vh;
@@ -94,3 +93,17 @@ nav h5 {
     text-align: center;
     padding-top: 1rem;
 }
+
+
+.threedots {
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+.threedots:hover {
+    background-color: rgb(74, 72, 72);
+}
+
+.loadi {
+    color:'white';
+}
+
